@@ -1,22 +1,26 @@
-#include<iostream>
-#include<bits/stdc++.h>
-#include <vector>
-
+#include <iostream>
 using namespace std;
 
-int GetAnswer(int n, int q, int c, vector<int> arr, vector<vector<int>> queries){
-    int sum = 0;
-
-    for(int i = 0;i<queries.size();i++){
-        int cnt = 0;
-        for(int j=0;j<n;j++){
-            if(i >= queries[i][0] && i <= queries[i][1]){
-                continue;
-            }else{
-                cnt++;
+int main() {
+    int t;
+    cin >> t;  // Number of test cases
+    
+    while (t--) {
+        long long n, k;
+        cin >> n >> k;
+        
+      
+        if (k % 2 == 0) {
+            cout << "YES" << endl;
+        } else {
+            
+            if (n % 2 == 0) {
+                cout <<"YES"<< endl; 
+            } else {
+                cout <<"NO"<< endl;  
             }
         }
-        sum += cnt;
     }
-    return sum;
+    
+    return 0;
 }
