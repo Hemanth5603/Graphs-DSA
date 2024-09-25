@@ -71,7 +71,6 @@ class Solution {
             else { 
                 ds.unionBySize(u, v);
             } 
-            
         } 
         for(int i = 0; i <= n; i++) { 
             if(ds.parent[i] == i) { 
