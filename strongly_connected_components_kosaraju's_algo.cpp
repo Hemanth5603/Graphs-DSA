@@ -51,13 +51,13 @@ class Solution
         for(int i=0;i<V;i++){
             vis[i] = 0;
             for(auto it: adj[i]){
+                
                 adjT[it].push_back(i);
             }
         }
         
         int cnt = 0;
         while(!st.empty()){
-            
             int node = st.top();
             st.pop();
             if(!vis[node]){

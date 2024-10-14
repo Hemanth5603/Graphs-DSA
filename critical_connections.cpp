@@ -1,15 +1,6 @@
 #include<bits/stdc++.h>
 
 using namespace std;
-
-// Take a timer var and asign the timer and low to that var 
-// now check after calling dfs if the low of the node is > timer of the adjacent node
-// if it is then its a bridge
-// else just store the min of node and adjacent node in the min array 
-
-
-
-
 class Solution {
 
 int timer = 1;
